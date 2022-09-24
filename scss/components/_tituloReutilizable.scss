@@ -1,5 +1,5 @@
 .titulo{
-    @include texts($titulo-reutilizable-font, xx-large, $titulo-reutilizable-color, bolder, center);
+    @include texts($titulo-reutilizable-font, xx-large, $titulo-reutilizable-color, bold, center);
     margin-bottom: 3vw;
     border: $titulo-reutilizable-borde 5px solid;
     background-image: url(../images/utilidad-uno.jpeg);
@@ -11,5 +11,6 @@
     
     @include breakpoint-large{
         margin-bottom: 0;
+        font-size: 3rem;
     }
 }

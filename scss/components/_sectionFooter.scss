@@ -21,7 +21,7 @@
         &--wayUP{
             @extend .pieDePagina__section__item;
             text-align: right;
-            font-size: 3rem;
+            font-size: xx-large;
         }
     }
 
@@ -37,7 +37,11 @@
         @include footerParts(15rem, 1.5rem, 1em);
         font-weight: bold;
     }
-    
+
+    i{
+        font-size: 1.3em;
+    }
+
     @include breakpoint-large{
         margin-bottom: 0;
 
@@ -48,13 +52,14 @@
         &__item{
             &--wayUP{
                 margin-top: 0.5em;
-            }
+                }
 
             &--especifico{
                 transition: 0.5s all ease-in-out;
                 &:hover{
                     background-color: rgba(214, 208, 208, 0.534);
                     border-radius: 15px;
+                    color: white;
                 }
             }
         }
@@ -62,6 +67,7 @@
         &__titulo{
             margin-left: 0;
         }
+
     }
 
     @include breakpoint-xlarge{

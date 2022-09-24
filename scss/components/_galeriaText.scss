@@ -1,0 +1,28 @@
+.seccionText{
+    padding: 2em;
+    &__text{
+        @include texts($galeria-text-font, medium, $galeria-text-color, normal, center);
+        background-color: $galeria-text-backColor;
+        border-radius: 10px;
+        border: 8px ridge $galeria-img-borderColor;
+    }
+
+    @include breakpoint-small{
+        &__text{
+            font-size: x-large;
+        }
+    }
+
+    @include breakpoint-large{
+        &__text{
+            font-size: xx-large;
+        }
+    }
+
+    @include breakpoint-xxxlarge{
+        &__text{
+            font-size: 3em;
+        }
+    }
+    
+}

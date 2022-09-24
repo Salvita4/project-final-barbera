@@ -1,5 +1,5 @@
 .cliente{
-    @include texts($eventos-clientes-font, xx-large, $eventos-clientes-color, normal, center);
+    @include texts($eventos-clientes-font, xx-large, $eventos-clientes-color, bold, center);
     border: $eventos-clientes-borderColor solid 2px;
     background-color: $eventos-clientes-backColor;
     margin: 10px;

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Signika:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Rubik+Dirt&family=Signika:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -134,6 +137,7 @@ main {
     font-size: 2rem;
     background-color: rgba(214, 208, 208, 0.5333333333);
     border-radius: 10px;
+    color: #fcb317;
   }
 }
 @media (min-width: 1400px) {
@@ -172,9 +176,9 @@ main {
 }
 
 .titulo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Rubik Dirt", cursive;
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
   color: #353534;
   margin-bottom: 3vw;
@@ -188,6 +192,7 @@ main {
 @media (min-width: 1024px) {
   .titulo {
     margin-bottom: 0;
+    font-size: 3rem;
   }
 }
 
@@ -195,7 +200,7 @@ main {
   margin-bottom: 4vw;
 }
 .info__texto {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Indie Flower", cursive;
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
@@ -296,7 +301,7 @@ main {
 }
 .pieDePagina__section__item--wayUP {
   text-align: right;
-  font-size: 3rem;
+  font-size: xx-large;
 }
 .pieDePagina__section__mapa {
   width: 14rem;
@@ -314,6 +319,9 @@ main {
   margin-left: 1em;
   font-weight: bold;
 }
+.pieDePagina__section i {
+  font-size: 1.3em;
+}
 @media (min-width: 1024px) {
   .pieDePagina__section {
     margin-bottom: 0;
@@ -330,6 +338,7 @@ main {
   .pieDePagina__section__item--especifico:hover {
     background-color: rgba(214, 208, 208, 0.534);
     border-radius: 15px;
+    color: white;
   }
   .pieDePagina__section__titulo {
     margin-left: 0;
@@ -357,7 +366,7 @@ main {
     transition: 0.6s all ease-in-out;
   }
   .bi-caret-up:hover {
-    font-size: 3.5rem;
+    font-size: 2.5em;
     color: #c0ad03;
   }
 }
@@ -494,7 +503,7 @@ textarea {
   margin-bottom: 0;
 }
 .articulo__titulo {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Rubik Dirt", cursive;
   font-size: xx-large;
   font-weight: normal;
   text-align: center;
@@ -509,7 +518,7 @@ textarea {
   border: 8px outset rgba(190, 187, 7, 0.6509803922);
   border-radius: 35px;
   padding: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Kalam", cursive;
   font-size: x-large;
   font-weight: normal;
   text-align: center;
@@ -558,14 +567,14 @@ textarea {
   background-color: rgba(255, 255, 255, 0.7529411765);
 }
 .eventos__subtitulo {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Rubik Dirt", cursive;
   font-size: xx-large;
   font-weight: normal;
   text-align: center;
-  color: black;
+  color: #000000;
 }
 .eventos__texto {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Indie Flower", cursive;
   font-size: x-large;
   font-weight: normal;
   text-align: center;
@@ -631,9 +640,9 @@ textarea {
 }
 
 .cliente {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Rubik Dirt", cursive;
   font-size: xx-large;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
   color: black;
   border: black solid 2px;
@@ -662,7 +671,7 @@ textarea {
   background-repeat: no-repeat;
 }
 .comments__texto {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Indie Flower", cursive;
   font-size: x-large;
   font-weight: normal;
   text-align: center;
@@ -773,15 +782,44 @@ textarea {
   }
 }
 
+.seccionText {
+  padding: 2em;
+}
+.seccionText__text {
+  font-family: "Indie Flower", cursive;
+  font-size: medium;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  background-color: rgba(139, 162, 184, 0.4196078431);
+  border-radius: 10px;
+  border: 8px ridge #8ba8c4;
+}
+@media (min-width: 576px) {
+  .seccionText__text {
+    font-size: x-large;
+  }
+}
+@media (min-width: 1024px) {
+  .seccionText__text {
+    font-size: xx-large;
+  }
+}
+@media (min-width: 2560px) {
+  .seccionText__text {
+    font-size: 3em;
+  }
+}
+
 .contenedor {
   padding-bottom: 1em;
 }
 @media (min-width: 1024px) {
   .contenedor {
     display: grid;
-    height: 400vh;
+    height: 500vh;
     grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: 8vh 40% 55%;
+    grid-template-rows: 2% 43% 55%;
     row-gap: 10px;
     column-gap: 5px;
   }
@@ -811,6 +849,7 @@ textarea {
     align-self: center;
     grid-column: 1/span 2;
     grid-row: 1;
+    font-size: 2rem;
   }
 }
 
@@ -819,6 +858,7 @@ textarea {
     align-self: center;
     grid-column: 3;
     grid-row: 1;
+    font-size: 2rem;
   }
 }
 
