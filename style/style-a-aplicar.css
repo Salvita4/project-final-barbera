@@ -241,7 +241,6 @@ main {
 }
 .nov__img {
   width: auto;
-  height: 75vh;
   object-fit: contain;
   padding: 1em;
 }
@@ -249,13 +248,13 @@ main {
   .nov {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     overflow-x: scroll;
     margin-bottom: 0;
   }
   .nov__img {
-    height: 85vh;
+    height: 65vh;
     padding: 0.5em;
   }
 }
@@ -263,6 +262,7 @@ main {
   .nov {
     margin-top: 2em;
     overflow-x: hidden;
+    justify-content: space-around;
   }
   .nov__img {
     padding: 0;

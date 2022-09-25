@@ -5,17 +5,16 @@
 
     &__img{
         width: auto;
-        height: 75vh;
         object-fit: contain;
-        padding: 1em
+        padding: 1em;
     }
 
     @include breakpoint-small{
-        @include d-flex(row, space-around, center);
+        @include d-flex(row, space-between, center);
         overflow-x: scroll;
         margin-bottom: 0;
         &__img{
-            height: 85vh;
+            height: 65vh;
             padding: 0.5em
         }
     }
@@ -23,6 +22,7 @@
     @include breakpoint-large{
         margin-top: 2em;
         overflow-x: hidden;
+        justify-content: space-around;
         &__img{
             padding: 0;
         }
